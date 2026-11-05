@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Seu nome] · Modelo Essencial</title>
+  <meta name="description" content="Modelo Essencial de site pessoal: uma página com apresentação, sobre, o que faço, trabalhos e contato.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .hero { display: grid; grid-template-columns: 220px 1fr; gap: 48px; align-items: center; padding: 80px 0 72px; }
+    .hero .ph { width: 220px; height: 220px; }
+    .about { display: grid; grid-template-columns: 1fr 1.6fr; gap: 48px; }
+    .work .ph { aspect-ratio: 16 / 10; }
+    .contact { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    @media (max-width: 760px) {
+      .hero, .about { grid-template-columns: 1fr; gap: 28px; }
+      .hero .ph { width: 160px; height: 160px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-bar">Modelo <strong>Essencial</strong>: uma página só, em português. <a href="../">Ver as duas versões</a></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#inicio">[Seu nome]</a>
+      <nav class="nav" aria-label="Seções">
+        <a href="#sobre">Sobre</a>
+        <a href="#o-que-faco">O que faço</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <div class="wrap hero">
+      <div class="ph round" role="img" aria-label="Espaço para foto de perfil">sua foto</div>
+      <div class="stack">
+        <p class="eyebrow">[Sua área]</p>
+        <h1>[Seu nome]</h1>
+        <p class="lead">[Sua profissão ou título]. [Uma frase que diga o que você faz e para quem.]</p>
+        <div class="btn-row">
+          <a class="btn" href="#contato">Entrar em contato</a>
+          <a class="btn ghost" href="#">Currículo</a>
+          <a class="btn ghost" href="#">[Rede social]</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" id="sobre">
+      <div class="wrap about">
+        <div>
+          <p class="eyebrow">Sobre</p>
+          <h2>Quem sou</h2>
+        </div>
+        <div class="stack">
+          <p class="slot">[Um parágrafo curto sobre você: trajetória, onde está hoje e o que te move.]</p>
+          <p class="slot">[Um segundo parágrafo, opcional: valores, jeito de trabalhar, algo pessoal.]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="o-que-faco">
+      <div class="wrap stack" style="gap: 32px">
+        <div>
+          <p class="eyebrow">O que faço</p>
+          <h2>Áreas de atuação</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>[Área ou serviço 1]</h3>
+            <p class="slot">[Duas ou três frases sobre o que você faz aqui e para quem.]</p>
+          </article>
+          <article class="card">
+            <h3>[Área ou serviço 2]</h3>
+            <p class="slot">[Duas ou três frases sobre o que você faz aqui e para quem.]</p>
+          </article>
+          <article class="card">
+            <h3>[Área ou serviço 3]</h3>
+            <p class="slot">[Duas ou três frases sobre o que você faz aqui e para quem.]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trabalhos">
+      <div class="wrap stack" style="gap: 32px">
+        <div>
+          <p class="eyebrow">Trabalhos</p>
+          <h2>Trabalhos selecionados</h2>
+        </div>
+        <div class="grid work">
+          <article class="card">
+            <div class="ph" role="img" aria-label="Espaço para imagem do trabalho">imagem</div>
+            <h3>[Trabalho 1]</h3>
+            <p class="slot">[O que foi, para quem e o resultado, em uma frase.]</p>
+          </article>
+          <article class="card">
+            <div class="ph" role="img" aria-label="Espaço para imagem do trabalho">imagem</div>
+            <h3>[Trabalho 2]</h3>
+            <p class="slot">[O que foi, para quem e o resultado, em uma frase.]</p>
+          </article>
+          <article class="card">
+            <div class="ph" role="img" aria-label="Espaço para imagem do trabalho">imagem</div>
+            <h3>[Trabalho 3]</h3>
+            <p class="slot">[O que foi, para quem e o resultado, em uma frase.]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="wrap stack" style="gap: 32px">
+        <div>
+          <p class="eyebrow">Contato</p>
+          <h2>Vamos conversar</h2>
+        </div>
+        <div class="contact">
+          <div class="card"><h3>E-mail</h3><p class="slot">[seu@email]</p></div>
+          <div class="card"><h3>WhatsApp</h3><p class="slot">[(00) 00000-0000]</p></div>
+          <div class="card"><h3>Cidade</h3><p class="slot">[Cidade, UF]</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© [ano] [Seu nome]</span>
+      <span>[Instagram] · [LinkedIn]</span>
+    </div>
+  </footer>
+</body>
+</html>

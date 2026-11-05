@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modelos de site pessoal</title>
+  <meta name="description" content="Dois modelos de site pessoal: Essencial e Completo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .choose { padding: 88px 0 72px; }
+    .choose .grid { margin-top: 40px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .choose .card { padding: 28px; gap: 16px; }
+    .choose .ph { aspect-ratio: 16 / 10; }
+    .choose ul { margin: 0; padding-left: 20px; color: var(--muted); display: flex; flex-direction: column; gap: 4px; }
+    .adapt { margin-top: 48px; }
+  </style>
+</head>
+<body>
+  <main class="wrap choose">
+    <p class="eyebrow">Modelos de site pessoal</p>
+    <h1>Duas versões, o mesmo visual</h1>
+    <p class="lead" style="margin-top: 16px">Modelos sem conteúdo, só para mostrar a estrutura. Os textos entre colchetes e as áreas listradas viram os seus textos e as suas fotos.</p>
+
+    <div class="grid">
+      <a class="card" href="essencial/">
+        <div class="ph" aria-hidden="true">uma página</div>
+        <h2>Essencial</h2>
+        <ul>
+          <li>Uma página só, que rola</li>
+          <li>Apresentação, sobre, o que faço, trabalhos selecionados e contato</li>
+          <li>Em português</li>
+        </ul>
+        <span class="btn" style="align-self: flex-start">Ver o Essencial</span>
+      </a>
+      <a class="card" href="completo/">
+        <div class="ph" aria-hidden="true">cinco seções</div>
+        <h2>Completo</h2>
+        <ul>
+          <li>Início, Sobre, Portfólio, Galeria e Contato</li>
+          <li>Português e inglês (botão PT/EN)</li>
+          <li>Portfólio com filtro por categoria</li>
+          <li>Galeria de fotos e formulário de contato</li>
+        </ul>
+        <span class="btn" style="align-self: flex-start">Ver o Completo</span>
+      </a>
+    </div>
+
+    <div class="card adapt">
+      <h2>As seções se adaptam a você</h2>
+      <p class="muted">Os nomes e o conteúdo de cada seção mudam conforme a pessoa. Para quem pesquisa, por exemplo, "O que faço" vira <strong>Pesquisa</strong>, o "Portfólio" vira <strong>Publicações</strong> e a "Galeria" vira <strong>Campo</strong>. Para quem atende clientes, entram <strong>Serviços</strong>, <strong>Depoimentos</strong> ou <strong>Blog</strong>.</p>
+    </div>
+  </main>
+</body>
+</html>
